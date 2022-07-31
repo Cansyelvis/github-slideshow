@@ -1,13 +1,37 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue sur ma page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-first">
+        <h1><span>You </span><span>need </span><span>some </span><span>rest</span></h1>
+        <div class="container-btns">
+            <button class="btn-first b1">Discover</button>
+            <button class="btn-first b2">Contact</button>
+        </div>
+    </div>
+<!-- ovaina logo an'i  ISPM -->
+    <img src="ressources/canadian-maple-leaf-brands.svg" class="logo">
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+
+    <ul class="medias">
+        <!--  -->
+        <li class="bulle"><img src="ressources/insta.svg" class="logo-medias"></li>
+        <li class="bulle"><img src="ressources/yt.svg" class="logo-medias"></li>
+        <li class="bulle"><img src="ressources/lol.jpg" class="logo-medias"></li>
+        <!-- ovaina logo inscription -->
+        <li class="bulle">
+            <a href="pages/inscription.html.html">
+                <img src="ressources/fb.svg" class="logo-medias"></li>
+            </a>
+    </ul>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
